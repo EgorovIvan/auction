@@ -1,0 +1,84 @@
+@use "var";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+  background: var.$bg-html;
+  font-size: calc(100vw * 16 / 1440);
+}
+
+body {
+  font-family: 'HelveticaNeueCyr', sans-serif;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+h3 {
+  color: rgb(0, 0, 0);
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.link-active {
+  border-radius: 0.625rem;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.modal-default {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  //transition: opacity 2s;
+  //opacity: 0.1;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}

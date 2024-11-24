@@ -1,0 +1,39 @@
+.error-404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+  color: #333;
+
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 10rem;
+    font-weight: bold;
+    margin: 0;
+    color: #ff4757;
+  }
+
+  &__message {
+    font-size: 1.5rem;
+    margin: 1.25rem 0;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 0.3125rem;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
